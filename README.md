@@ -51,6 +51,9 @@ Options:
                      the username on the next authentication.
 ```
 
+![Simple usage](docs/basic.png)
+
 # TODO
 * Load variables in the shell automatically after executing the tool.
 * Be able to use different AWS config locations.
+
