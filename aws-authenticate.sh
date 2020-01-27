@@ -39,7 +39,7 @@ do
                 "" "" \
                 "Options:" "" \
                 "    -h" "Help, displays this message." \
-                "    -v" "Verbose display."
+                "    -v" "Verbose display." \
                 "    -a ACCOUNT_ID" "Sets a different AWS account ID, also resets the MFA ARN serial." \
                 "    -p PROFILE" "Uses the given profile for authentication. If not provided, will use the default." \
                 "    -f" "Forces re-authentication." \
@@ -72,7 +72,7 @@ while getopts "${_OPTIONS}" OPTIONPARAM
 do
     case "${OPTIONPARAM}" in
         v)
-            IS_VERBOSE=1
+            IS_VERBOSE="1"
             ;;
         f)
             AWS_FORCE_TOKEN=1
