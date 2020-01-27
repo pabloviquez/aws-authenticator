@@ -2,18 +2,24 @@
 
 This tool is a simple interface that handles the CLI authentication with Amazon Web Services using the Multi-Factor-Authentication (MFA).
 
-# Requirements
+## Requirements
 
-The tool requires the AWS CLI tool installed. If you do not have it on your computer, you can easily install it by running:
+The tool requires the AWS CLI and JQ tool.
 
-```
-brew install awscli
-```
 
 # Install - Homebrew
 ```
 brew tap pabloviquez/aws-authenticator
 brew install aws-authenticator
+```
+
+# Install - Manually
+```
+wget https://github.com/pabloviquez/aws-authenticator/archive/v1.0.3.tar.gz
+tar -xzvf v1.0.3.tar.gz
+chmod +x v1.0.3/aws-authenticator
+sudo cp v1.0.3/aws-authenticator /usr/local/bin
+rm -Rf v1.0.3
 ```
 
 # Basis Usage
