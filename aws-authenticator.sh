@@ -33,9 +33,9 @@ do
                 "" "" \
                 "${COLOR_BLUE}AWS Authenticator Help${COLOR_NORMAL} - Script usage and options" "" \
                 "" "" \
-                "Resets values:" " bash ${0} -r" \
-                "Force authentication:" "bash ${0} -f" \
-                "Other combinations:" " bash ${0} [-s] [-p XX] [-a XX] [-f]" \
+                "Resets values:" "aws-authenticator -r" \
+                "Force authentication:" "aws-authenticator -f" \
+                "Other combinations:" " aws-authenticator [-s] [-p XX] [-a XX] [-f]" \
                 "" "" \
                 "Options:" "" \
                 "    -h" "Help, displays this message." \

@@ -10,6 +10,18 @@ The tool requires the AWS CLI tool installed. If you do not have it on your comp
 brew install awscli
 ```
 
+# Basis Usage
+
+```
+aws-authenticator
+```
+
+## Force authentication and change the profile used
+
+```
+aws-authenticator -f -p MYAWSPROFILE
+```
+
 # Options
 
 The supported options are:
