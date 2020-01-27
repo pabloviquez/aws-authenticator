@@ -28,6 +28,13 @@ aws-authenticator
 aws-authenticator -f -p MYAWSPROFILE
 ```
 
+### Note
+After running the tool, you need to load the variables as follow:
+
+```
+source ~/.aws/mfa-session
+```
+
 # Options
 
 The supported options are:
@@ -44,3 +51,6 @@ Options:
                      the username on the next authentication.
 ```
 
+# TODO
+* Load variables in the shell automatically after executing the tool.
+* Be able to use different AWS config locations.
