@@ -10,6 +10,12 @@ The tool requires the AWS CLI tool installed. If you do not have it on your comp
 brew install awscli
 ```
 
+# Install - Homebrew
+```
+brew tap pabloviquez/aws-authenticator
+brew install aws-authenticator
+```
+
 # Basis Usage
 
 ```
