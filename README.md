@@ -1,6 +1,6 @@
 # AWS Authenticator Helper
 
-This is a tool that helps the authentication process with AWS.
+This tool is a simple interface that handles the CLI authentication with Amazon Web Services using the Multi-Factor-Authentication (MFA).
 
 # Requirements
 
