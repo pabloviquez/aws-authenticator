@@ -16,10 +16,10 @@ brew install aws-authenticator
 # Install - Manually
 ```
 wget https://github.com/pabloviquez/aws-authenticator/archive/v1.0.4.tar.gz
-tar -xzvf v1.0.3.tar.gz
-chmod +x v1.0.3/aws-authenticator
-sudo cp v1.0.3/aws-authenticator /usr/local/bin
-rm -Rf v1.0.3
+tar -xzvf v1.0.4.tar.gz
+chmod +x v1.0.4/aws-authenticator
+sudo cp v1.0.4/aws-authenticator /usr/local/bin
+rm -Rf v1.0.4
 ```
 
 # Basis Usage
