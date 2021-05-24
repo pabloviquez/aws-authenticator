@@ -139,7 +139,7 @@ function aws_configure_mfa_serial ()
     fi
 }
 
-function reset_aws_session_variables () 
+function reset_aws_session_variables ()
 {
     local _isResetMfaRequired=$1
     local _avoidProfileReset=$2
@@ -233,7 +233,7 @@ function aws_mfa_authenticate ()
 
     echo ""
     echo "${COLOR_WHITE}Step 4. Authenticating${COLOR_NORMAL}"
-    if [ ${IS_VERBOSE} == "1" ]; then 
+    if [ ${IS_VERBOSE} == "1" ]; then
         echo "  MFA ARN: ${AWS_MFA_SERIAL}"
     fi
     echo ""
@@ -269,7 +269,7 @@ function aws_mfa_authenticate ()
     get_json_value "SecretAccessKey" AWS_SECRET_ACCESS_KEY
     get_json_value "SessionToken" AWS_SESSION_TOKEN
     get_json_value "Expiration" AWS_SESSION_EXPIRATION
-    AWS_SESSION_TTL=$(date -j -u -f "%Y-%m-%dT%TZ" "${AWS_SESSION_EXPIRATION}" "+%s")
+    AWS_SESSION_TTL=$(date -j -u -f "%Y-%m-%dT%T+00:00" "${AWS_SESSION_EXPIRATION}" "+%s")
 
     echo "export AWS_ACCESS_KEY_ID=\"${AWS_ACCESS_KEY_ID}\"" > ${AWS_MFA_SESSION_FILE}
     echo "export AWS_SECRET_ACCESS_KEY=\"${AWS_SECRET_ACCESS_KEY}\"" >> ${AWS_MFA_SESSION_FILE}
